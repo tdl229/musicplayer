@@ -40,7 +40,7 @@
 <body>
     <h1>Privacy Policy</h1>
     <h2>MeloPlay: Offline Music Player</h2>
-    <p><em>[Last Amended: October 28, 2026]</em></p>
+    <p><em>[Last Amended: November 1, 2026]</em></p>
     <p>This Privacy Policy (“<strong>Privacy Policy</strong>”) is an integral part of our <a href="./terms.html">End
             User License Agreement</a> (“<strong>EULA</strong>”), and governs the processing and transfer of data
         collected or processed when you use or access the MeloPlay: Offline Music Player mobile application
@@ -79,8 +79,8 @@
 
     <p><strong><em>Non-Personal Data</em></strong></p>
     <p>During your interaction with the App, we may process non-identifiable technical and preference information
-        locally on your device (“<strong>Non-Personal Data</strong>”), such as your selected app language, content
-        region preference, equalizer settings, theme preferences, device model, and operating system version.</p>
+        locally on your device (“<strong>Non-Personal Data</strong>”), such as your selected app language, playback
+        speed, equalizer settings, theme preferences, device model, and operating system version.</p>
 
     <p><strong><em>Personal Data &amp; Device Permissions</em></strong></p>
     <p>We do not knowingly collect or process any Special Categories of Personal Data (such as racial or ethnic origin,
@@ -100,10 +100,19 @@
                 <td><strong>Local Audio Files &amp; Media Library</strong><br>(MP3, M4A, WAV, FLAC imported via Files,
                     iCloud Drive, or Wi-Fi Transfer)</td>
                 <td>When you import audio files into the App, the App reads the audio file data and embedded metadata
-                    (title, artist, album, duration, artwork) solely to organize your offline music library, create
-                    local playlists, and play audio through the built-in equalizer and player.</td>
+                    (title, artist, album, duration, cover artwork) solely to organize your offline music library,
+                    create local playlists, and play audio through the built-in equalizer and player.</td>
                 <td>Processed solely on your device based on your explicit action and consent. <strong>We never upload,
                         transmit, or store your local audio files on any external server.</strong></td>
+            </tr>
+            <tr>
+                <td><strong>Video-to-Audio Extraction</strong><br>(User-selected videos via iOS Photo Picker / Document
+                    Picker)</td>
+                <td>When you use “Extract Audio from Video”, the App reads only the specific video files you explicitly
+                    select from Photos or Files to extract an offline M4A audio track and capture a thumbnail cover
+                    image locally on your device.</td>
+                <td>Processed 100% locally on your device upon your explicit selection. <strong>Selected videos and
+                        extracted audio tracks never leave your device.</strong></td>
             </tr>
             <tr>
                 <td><strong>Local Network Permission</strong><br>(<code>NSLocalNetworkUsageDescription</code> / Wi-Fi
@@ -114,15 +123,6 @@
                 <td>Processed strictly over your local area network (LAN) upon your explicit activation of the Wi-Fi
                     Transfer feature. No audio files or network traffic pass through our servers. You may disable Local
                     Network permission at any time in iOS Settings.</td>
-            </tr>
-            <tr>
-                <td><strong>Online Music Streaming &amp; Search Queries</strong></td>
-                <td>When you browse global music charts, search for songs/artists/playlists, or stream online tracks,
-                    the App sends your search query or selected region code directly from your device to public music
-                    discovery / streaming endpoints (YouTube / YouTube Music) to display and play the requested media.
-                </td>
-                <td>Processed to perform the Service you requested. Your liked songs, followed artists, and imported
-                    playlists are saved locally on your device in local storage.</td>
             </tr>
             <tr>
                 <td><strong>In-App Payment &amp; Subscription Information</strong><br>(Apple StoreKit 2)</td>
@@ -155,24 +155,22 @@
     <h2 id="d-how-we-collect-your-information">D. <strong>HOW WE COLLECT YOUR INFORMATION:</strong></h2>
     <ul>
         <li><strong>Locally on Your Device</strong>: Playlists, liked songs, equalizer presets, theme choices, and
-            imported audio files are stored locally in your device’s sandboxed storage and are automatically removed if
-            you uninstall the App.</li>
-        <li><strong>Through System Permissions</strong>: Local Network access is requested only when you open the Wi-Fi
-            Transfer feature, and file access is granted only for the specific files you pick via the iOS Document
-            Picker.</li>
+            imported or extracted audio files are stored locally in your device’s sandboxed storage and are
+            automatically removed if you uninstall the App.</li>
+        <li><strong>Through System Permissions &amp; Pickers</strong>: Local Network access is requested only when you
+            open the Wi-Fi Transfer feature, and file or video access is granted only for the specific items you
+            explicitly pick via the iOS Document Picker or iOS Photo Picker.</li>
         <li><strong>Voluntarily</strong>: When you email our support team directly.</li>
     </ul>
 
-    <h2 id="e-sdk--tracking-technologies">E. <strong>SDK &amp; THIRD-PARTY SERVICES:</strong></h2>
-    <p>We do <strong>not</strong> integrate third-party behavioral advertising SDKs that sell your personal data. The
-        App interacts only with the following platform services necessary for core functionality:</p>
+    <h2 id="e-sdk--tracking-technologies">E. <strong>SDK &amp; PLATFORM SERVICES:</strong></h2>
+    <p>We do <strong>not</strong> integrate third-party behavioral advertising SDKs or third-party media streaming SDKs,
+        and we never sell your personal data. The App interacts only with the following Apple platform service necessary
+        for subscription functionality:</p>
     <ul>
         <li><strong>Apple StoreKit 2 (In-App Purchases)</strong>: Used for subscription billing, free trial eligibility
             checks, and purchase restoration. Apple’s Privacy Policy: <a
                 href="https://www.apple.com/legal/privacy/en-ww/">https://www.apple.com/legal/privacy/en-ww/</a></li>
-        <li><strong>YouTube / Google Public Media Services</strong>: Used when streaming online music videos/audio and
-            fetching public music charts. Google Privacy Policy: <a
-                href="https://policies.google.com/privacy?hl=en">https://policies.google.com/privacy?hl=en</a></li>
     </ul>
 
     <h2 id="f-data-sharing">F. <strong>DATA SHARING – CATEGORIES OF RECIPIENTS:</strong></h2>
@@ -190,21 +188,21 @@
 
     <h2 id="g-data-retention">G. <strong>DATA RETENTION:</strong></h2>
     <p>All user-created playlists, liked songs, app preferences, and imported offline audio files are stored locally on
-        your device. You can delete individual tracks, playlists, or web/image caches at any time within the App, or
+        your device. You can delete individual tracks, playlists, or temporary caches at any time within the App, or
         delete all local App data immediately by uninstalling the App from your device. Support emails sent to us are
         retained only as long as necessary to resolve your inquiry or comply with applicable legal obligations.</p>
 
     <h2 id="h-security-measures">H. <strong>SECURITY MEASURES:</strong></h2>
     <p>We implement technical and organizational measures designed to protect your information, including storing your
-        offline library within the iOS application sandbox, using HTTPS/TLS encryption for online requests, and using
-        Apple’s cryptographically signed StoreKit 2 framework for subscription verification. If you have any security
-        concerns, please contact us at <a href="mailto:tdl229121327@163.com">tdl229121327@163.com</a>.</p>
+        offline library and extracted audio tracks within the iOS application sandbox and using Apple’s
+        cryptographically signed StoreKit 2 framework for subscription verification. If you have any security concerns,
+        please contact us at <a href="mailto:tdl229121327@163.com">tdl229121327@163.com</a>.</p>
 
     <h2 id="i-international-data-transfer">I. <strong>INTERNATIONAL DATA TRANSFER:</strong></h2>
-    <p>Because your offline music library and preferences are stored locally on your device, we do not transfer your
-        local library to external servers. When you access third-party online streaming services or Apple App Store
-        services, your requests are processed by those providers in accordance with their global infrastructure and
-        applicable data protection safeguards (including EU Standard Contractual Clauses where applicable).</p>
+    <p>Because your offline music library, extracted audio files, and preferences are stored locally on your device, we
+        do not transfer your local library to external servers. When you use Apple App Store subscription services, your
+        requests are processed directly by Apple in accordance with their global infrastructure and applicable data
+        protection safeguards (including EU Standard Contractual Clauses where applicable).</p>
 
     <h2 id="j-user-rights">J. <strong>USER RIGHTS:</strong></h2>
     <p>Depending on your jurisdiction (including under the GDPR, LGPD, CCPA, and other privacy laws), you may have the
@@ -216,9 +214,9 @@
 
     <h2 id="k-opt-out-options">K. <strong>OPT-OUT OPTIONS:</strong></h2>
     <p>We do not sell your Personal Data or engage in cross-context behavioral advertising. You can revoke Local
-        Network permissions at any time in your device’s <strong>Settings &gt; Privacy &amp; Security &gt; Local
-            Network</strong>, and clear cached web/image data directly inside the App’s <strong>Settings &gt; Clear Web
-            &amp; Image Cache</strong>.</p>
+        Network or Photo Library permissions at any time in your device’s <strong>Settings &gt; Privacy &amp;
+            Security</strong>, and clear temporary caches directly inside the App’s <strong>Settings &gt; Clear
+            Temporary Cache</strong>.</p>
 
     <h2 id="l-eligibility-and-children-privacy">L. <strong>ELIGIBILITY AND CHILDREN’S PRIVACY:</strong></h2>
     <p>The Services are not intended for use by children under the age of 16 in the EEA or under the age of 13 in the
